@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'helveticaneuecyrroman';
+    src:url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype'),
+        url('../fonts/helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'helveticaneuecyrmedium';
+    src:url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype'),
+        url('../fonts/helveticaneuecyr-medium-webfont.svg#helveticaneuecyrmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'helveticaneuecyrlight';
+    src:url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+        url('../fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+helvetica(style = romain) {
+    if style == romain {
+        font-family: 'helveticaneuecyrroman', sans-serif;
+    }
+
+    if style == medium {
+        font-family: 'helveticaneuecyrmedium', sans-serif;
+    }
+
+    if style == light {
+        font-family: 'helveticaneuecyrlight', sans-serif;
+    }
+}
