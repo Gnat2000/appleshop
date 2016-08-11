@@ -1,8 +1,49 @@
 footer.footer
-    .container
-        p.rights
-            | All Rights Research
-
+    .footer__top
+        .container
+            .footer__info
+                .footer__logo
+                    a(href="/").logo.footer__logo
+                        img(src='img/logo_footer.png', alt='ModusVersus logo').footer__logo-pic
+                        .tooter__logo-text ModusVersus
+                .footer__text
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .
+                address.footer__contacts
+                    ul.footer__contacts-list
+                        li.footer__contacts-item
+                            .footer__contacts-title Phone:
+                            a(href='tel:182 2569 5896').footer__contacts__link 182 2569 5896
+                        li.footer__contacts-item
+                            .footer__contacts-title e-mail:
+                            a(href='mailto:info@modu.versus').footer__contacts__link info@modu.versus
+            .footer__nav
+                ul.footer__nav-list
+                    li.footer__nav-item
+                        .footer__nav-title Company
+                        ul.footer__nav-list
+                            each link in ['About', 'FAQ', 'Contact', 'Terms', 'Privacy', 'Testimonials']
+                                li.footer__nav-menu
+                                    a(href="#").footer__nav-link= link
+                    li.footer__nav-item
+                        .footer__nav-title Community
+                        ul.footer__nav-list
+                            each link in ['Blog', 'Forum', 'Support', 'Newsletter']
+                                li.footer__nav-menu
+                                    a(href="#").footer__nav-link= link
+            .footer__blog
+                .footer__blog-title from the
+                    span BLOG
+                ul.footer__blog-list
+                    li.footer__blog-item
+                        img(src='#', alt='').footer__blog-pic
+                        article.footer__blog-article
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        time.footer__blog-datetime 26 May, 2013
+                    li.footer__blog-item
+                        img(src='#', alt='').footer__blog-pic
+                        article.footer__blog-article
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        time.footer__blog-datetime 26 May, 2013
 <!-- build:js js/vendor.min.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
