@@ -2,20 +2,19 @@ footer.footer
     .footer__top
         .container
             .footer__info
-                .footer__logo
-                    a(href="/").logo.footer__logo
-                        img(src='img/logo_footer.png', alt='ModusVersus logo').footer__logo-pic
-                        .tooter__logo-text ModusVersus
+                a(href="/").footer__logo
+                    img(src='img/logo_footer.png', alt='ModusVersus logo').footer__logo-pic
+                    .tooter__logo-text ModusVersus
                 .footer__text
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .
-                address.footer__contacts
+                .footer__contacts
                     ul.footer__contacts-list
                         li.footer__contacts-item
                             .footer__contacts-title Phone:
-                            a(href='tel:182 2569 5896').footer__contacts__link 182 2569 5896
+                            a(href='tel:182 2569 5896').footer__contacts-link 182 2569 5896
                         li.footer__contacts-item
                             .footer__contacts-title e-mail:
-                            a(href='mailto:info@modu.versus').footer__contacts__link info@modu.versus
+                            a(href='mailto:info@modu.versus').footer__contacts-link info@modu.versus
             .footer__nav
                 ul.footer__nav-list
                     li.footer__nav-item
@@ -32,19 +31,30 @@ footer.footer
                                     a(href="#").footer__nav-link= link
             .footer__blog
                 .footer__blog-title from the
-                    span BLOG
+                    span.footer__blog-title-blog BLOG
                 ul.footer__blog-list
                     li.footer__blog-item
-                        img(src='#', alt='').footer__blog-pic
-                        article.footer__blog-article
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        time.footer__blog-datetime 26 May, 2013
+                        .footer__blog-pic
+                            img(src='img/Rectangle.png', alt='').footer__blog-img
+                        .footer__blog-article
+                            .footer__blog-about
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            .footer__blog-datetime 26 May, 2013
                     li.footer__blog-item
-                        img(src='#', alt='').footer__blog-pic
-                        article.footer__blog-article
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        time.footer__blog-datetime 26 May, 2013
-<!-- build:js js/vendor.min.js -->
+                        .footer__blog-pic
+                            img(src='img/Rectangle.png', alt='').footer__blog-img
+                        .footer__blog-article
+                            .footer__blog-about
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            .footer__blog-datetime 26 May, 2013
+    .footer__bottom
+        .container
+            .footer__bottom-text 2013 ModusVersus
+            .footer__bottom-socials
+                ul.footer__bottom-socials-list
+                    each val, key in items={'fb': 'facebook.com', 'gp': 'plus.google.com','tw':'twitter.com', 'rss': 'modusversus.com'}
+                        li.footer__bottom-socials-item
+                            a(href="#" target='_blank' class='footer__bottom-socials-link footer__bottom-socials-link_' + key)= val
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <!-- endbower -->

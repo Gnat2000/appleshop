@@ -1,0 +1,188 @@
+.footer {
+    background-color:  $footer-color;
+
+    &:before {
+        content: '';
+        background: url(../img/Path.png) top center repeat;
+        height: 19px;
+        margin-bottom: -19px;
+        display: block;
+    }
+}
+    .footer__top, .footer__bottom {
+        clearfix();
+    }
+    .footer__top {
+        height: 300px;
+    }
+        .footer__info, .footer__nav, .footer__blog {
+            float: left;
+        }
+        .footer__info {
+            width: 33.7%;
+        }
+        .footer__nav {
+            width: 34.3%
+        }
+        .footer__blog {
+            width: 32%;
+        }
+            .footer__logo {
+                display: inline-block;
+                margin: 48px 0 23px 0px;
+            }
+                .footer__logo-pic{
+                    display: block;
+                    max-width: 192px;
+                    max-height: 21px;
+                }
+                .tooter__logo-text {
+                    position: absolute;
+                    left: -9999px;
+                }
+            .footer__text {
+                color: #fff;
+                margin-bottom: 20px;
+                line-height 23px;
+                padding-right: 21px;
+                letter-spacing: 0.001em;
+            }
+                    .footer__contacts-title {
+                        color: #fff;
+                        vertical-align(middle);
+                    }
+                    .footer__contacts-link {
+                        font-size 20px;
+                        line-height: 30px;
+                        color: #fff;
+                        open-sans(semibolditalic);
+                        vertical-align(middle);
+                        margin-left: 14px;
+                        }
+                .footer__nav {
+                    margin-top: 44px;
+                }
+                    .footer__nav-item {
+                        vertical-align();
+                        margin-left: 84px;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                        .footer__nav-title {
+                            open-sans(bold);
+                            font-size: 20px;
+                            color: rgba(0, 0, 0, 0.5);
+                            margin-bottom: 23px;
+                        }
+                            .footer__nav-link {
+                                color: #fff;
+                                open-sans();
+                                line-height 23px;
+                                margin-left: 25px;
+
+                                &:before {
+                                    font-family: FontAwesome , sans-serif;
+                                    content: "\f105";
+                                    margin-right: 9px;
+                                }
+                            }
+                    .footer__blog-title, .footer__blog-title-blog {
+                        open-sans(italic);
+                        font-size: 20px;
+                        color: #fff;
+                        margin-top: 44px;
+                        margin-bottom: 21px;
+                    }
+                        .footer__blog-title-blog {
+                            open-sans(bold);
+                            font-style: normal;
+                        }
+                        .footer__blog-item {
+                            margin-top: 16px;
+
+                            &:first-child {
+                                margin-top: 0;
+                            }
+                        }
+                            .footer__blog-pic {
+                                vertical-align();
+
+                                &.footer__blog-img {
+                                    display: block;
+                                    max-width: 70px;
+                                    max-height: 70px;
+                                }
+                            }
+
+                            .footer__blog-article {
+                                margin-left: 12px;
+                                width: 70%;
+                                color: #fff;
+                                line-height: 19px;
+                                vertical-align();
+                            }
+                                .footer__blog-datetime {
+                                    color: rgba(0, 0, 0, 0.5);
+                                }
+        .footer__bottom {
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 50px;
+        }
+            .footer__bottom-text {
+                float: left;
+                color: #fff;
+                font-size: 12px;
+                padding-top: 18px;
+            }
+            .footer__bottom-socials {
+                float: right;
+                margin-top: 14px;
+            }
+                .footer__bottom-socials-list {
+                    margin: 0;
+                    padding: 0;
+                    min-width: 147px;
+                }
+                    .footer__bottom-socials-item {
+                        display: inline-block;
+                        height: 22px;
+                        width: 23px;
+                        margin-left: 15px;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                        .footer__bottom-socials-link {
+                            display: block;
+                            height: 100%;
+                            width: 100%;
+                            text-indent: -9999px;
+                            background: url(../img/spritesheet_socials.png) no-repeat;
+
+                            &.footer__bottom-socials-link_fb {
+                                background-position: -50px -50px;
+                                //width: 10px;
+                                //height: 22px;
+                            }
+
+                            &.footer__bottom-socials-link_gp {
+                                background-position: -160px -50px;
+                                //width: 22px;
+                                //height: 23px;
+                            }
+
+                            &.footer__bottom-socials-link_tw {
+                                background-position: -404px -50px;
+                                //width: 17px;
+                                //height: 22px;
+                            }
+
+                            &.footer__bottom-socials-link_rss {
+                                background-position: -282px -50px;
+                                //width: 22px;
+                                //height: 21px;
+                            }
+                        }
