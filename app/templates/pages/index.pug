@@ -4,6 +4,9 @@ block title
     | Main Page
 
 block content
-    section.content
-        .container
-            .con-b
+    section.slider
+        ul.bxslider
+            each title in ['star_wars1.jpg', 'star_wars2.jpg', 'star_wars3.jpg', 'star_wars4.jpg']
+                li.slider__item
+                    img(src='img/big_slider/' + title, alt='Starwars').slider__img
+

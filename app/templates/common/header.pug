@@ -1,0 +1,20 @@
+header.header
+    .container
+        .header__logo
+            a(href="#").logo
+                img(src='img/logo_footer.png', alt='Логотип').logo__pic
+                .logo-text ModusVersus
+        nav.header__nav
+            ul.nav__list
+                each title in ['Home', 'About', 'Services', 'Portfolio', 'Blog', 'Features', 'Contacts', 'Search']
+                    li(class="nav__item" + (( title == 'Home')? " active":''))
+                        a(href="#" class="nav__link" + (( title == 'Portfolio')? " nav__link_popup":'') + (( title == 'Search') ? " nav__link_search" : ''))
+                            span.nav__title= title
+                        if title == 'Portfolio'
+                            .nav__popup
+                                ul.nav__popup-list
+                                    each item in ['Portfolio 2 column column page', 'Portfolio 2 column page', 'Portfolio 2 column page', 'Portfolio 2 column page']
+                                        li.nav__popup-item
+                                            a(href="#").nav__popup-link= item
+
+

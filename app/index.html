@@ -14,6 +14,7 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/bower_components/bxslider-4/dist/jquery.bxslider.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css css/main.min.css -->
@@ -30,10 +31,91 @@
 <![endif]-->
         <div class="wrapper">
             <div class="main-content">
-                <section class="content">
+                <header class="header">
                     <div class="container">
-                        <div class="con-b"></div>
+                        <div class="header__logo">
+                            <a class="logo" href="#">
+                                <img class="logo__pic" src="img/logo_footer.png" alt="Логотип">
+                                <div class="logo-text">ModusVersus</div>
+                            </a>
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="nav__list">
+                                <li class="nav__item active">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__title">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__title">About</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__title">Services</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link nav__link_popup" href="#">
+                                        <span class="nav__title">Portfolio</span>
+                                    </a>
+                                    <div class="nav__popup">
+                                        <ul class="nav__popup-list">
+                                            <li class="nav__popup-item">
+                                                <a class="nav__popup-link" href="#">Portfolio 2 column column page</a>
+                                            </li>
+                                            <li class="nav__popup-item">
+                                                <a class="nav__popup-link" href="#">Portfolio 2 column page</a>
+                                            </li>
+                                            <li class="nav__popup-item">
+                                                <a class="nav__popup-link" href="#">Portfolio 2 column page</a>
+                                            </li>
+                                            <li class="nav__popup-item">
+                                                <a class="nav__popup-link" href="#">Portfolio 2 column page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__title">Blog</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__title">Features</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__title">Contacts</span>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link nav__link_search" href="#">
+                                        <span class="nav__title">Search</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                </header>
+                <section class="slider">
+                    <ul class="bxslider">
+                        <li class="slider__item">
+                            <img class="slider__img" src="img/big_slider/star_wars1.jpg" alt="Starwars">
+                        </li>
+                        <li class="slider__item">
+                            <img class="slider__img" src="img/big_slider/star_wars2.jpg" alt="Starwars">
+                        </li>
+                        <li class="slider__item">
+                            <img class="slider__img" src="img/big_slider/star_wars3.jpg" alt="Starwars">
+                        </li>
+                        <li class="slider__item">
+                            <img class="slider__img" src="img/big_slider/star_wars4.jpg" alt="Starwars">
+                        </li>
+                    </ul>
                 </section>
             </div>
         </div>
@@ -43,7 +125,7 @@
                     <div class="footer__info">
                         <a class="footer__logo" href="/">
                             <img class="footer__logo-pic" src="img/logo_footer.png" alt="ModusVersus logo">
-                            <div class="tooter__logo-text">ModusVersus</div>
+                            <div class="footer__logo-text">ModusVersus</div>
                         </a>
                         <div class="footer__text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
@@ -159,7 +241,8 @@
             </div>
         </footer>
         <!-- bower:js -->
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/jquery/jquery.js"></script>
+        <script src="/bower_components/bxslider-4/dist/jquery.bxslider.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:js js/main.min.js -->
