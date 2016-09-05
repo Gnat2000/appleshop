@@ -9,4 +9,83 @@ block content
             each title in ['star_wars1.jpg', 'star_wars2.jpg', 'star_wars3.jpg', 'star_wars4.jpg']
                 li.slider__item
                     img(src='img/big_slider/' + title, alt='Starwars').slider__img
-
+    section.top__services
+        .container
+            .title
+                h2.title__text Some of our top services
+                .text
+                    p Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+            .button__view
+                a(href="#").button__view-link View More
+    section.read__more
+        .container
+            ul.read__more-list
+                -var blocks = [{icon: 'fa-thumbs-o-up', title: 'suspendisse', text: 'Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.'},{icon: 'fa-key', title: 'maecenas', text:'Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.'}, {icon: 'fa-flag', title: 'aliquam', text: 'Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.'}, {icon: 'fa-flask', title: 'habitasse', text: 'Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.'}]
+                for block in blocks
+                    li.read__more-item
+                        i(class='read__more-icon fa ' + block.icon)
+                        .read__more-title= block.title
+                        .read__more-text= block.text
+                        .read__more-button
+                            a(href="#").read__more-button-link read more
+    section.why__modus
+        .container
+            h1.why__modus-title Why Modus Versus?
+            .why__modus-text Capacitance cascading integer reflective interface data development high bus cache dithering transponder.
+            .left__image
+                ul.left__image-left-dots
+                    li.dot
+                    li.dot
+                    li.dot
+                .image-top
+                    img(src='img/star_wars_left.jpg', alt='Left Image').image-top-pic
+            .center__image
+                .topbar
+                    ul.center__image-left-dots
+                        li.dot
+                        li.dot
+                        li.dot
+                    .center__image-right-oval
+                        .oval
+                .center__image-top
+                    img(src='img/star_wars_top.jpg', alt='Center Image').center__image-top-pic
+            .right__image
+                .right__image-right-oval
+                    .oval
+                .image-top
+                    img(src='img/star_wars_right.jpg', alt='Right Image').image-top-pic
+    section.questions
+        .container
+            .why__choose
+                h4.why__choose__title Why Choose Us ?
+                ul.why__choose-list
+                    each text in ['Quisque at massa ipsum', 'Maecenas a lorem augue, egestas', 'Cras vitae felis at lacus eleifend', 'Etiam auctor diam pellentesque', 'Nulla ac massa at dolor', 'Condimentum eleifend vitae vitae']
+                        li.why__choose-menu
+                            .why__choose-text= text
+            .ratings
+                .ratings__text
+                    p Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus
+                        a(href="#").ratings__link
+                            span vehicula mattis
+                        |. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
+                ul.ratings__arc
+                    - var index=0
+                    each values, key in {'suspendisse': '50', 'maecenas': '70', 'aliquam': '80', 'habitasse': '100'}
+                        li.ratings__arc-item
+                            div(class='ratings__arc-circular ratings__arc-circular_'+ index++)
+                            .ratings__arc-number= values
+                            .ratings__arc-title= key
+            .what__say
+                h4.what__say__title What Client’s Say ?
+                .answer
+                    p Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis.
+                        span Nulla ac massa at dolor condimentum
+                .name Jhon Doe
+    section.clients
+        .container
+            .clients__title Our Happy Clients
+            .divider
+            ul.clients__slider
+                each title in ['star_wars_1.jpg', 'star_wars_2.jpg', 'star_wars_3.jpg','star_wars_4.jpg', 'star_wars_5.jpg', 'star_wars_6.jpg', 'star_wars_7.jpg', 'star_wars_8.jpg', 'star_wars_9.jpg']
+                    li.clients__slider-item
+                        img(src='img/small_slider/' + title, alt='Starwars').clients__slider-pic

@@ -16,7 +16,15 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-    $('.bxslider').bxSlider({
-        // startSlide: 0
+    $('.bxslider').bxSlider();
+});
+
+$(document).ready(function(){
+    $('.clients__slider').bxSlider({
+        minSlides: 3,
+        maxSlides: 6,
+        slideWidth: 170,
+        slideMargin: 30,
+        pager: false
     });
 });

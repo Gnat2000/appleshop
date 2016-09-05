@@ -1,0 +1,77 @@
+.read__more .container {
+    clearfix();
+    margin-bottom: 78px;
+}
+    .read__more-item {
+        float: left;
+        width: 23.07%;
+        margin-left: 30px;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        position: relative;
+        padding: 114px 13px 35px;
+        height: 307px;
+        box-shadow(0, 7px, 5px, -3px, #e5e6e6);
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            .read__more-button-link {
+                background-color: lighten($red, 20%);
+                box-shadow(0, 7px, 5px, -3px, $red);
+
+                &:active {
+                    box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+                    transform: translateY(3px);
+                }
+            }
+            .read__more-icon {
+                color: $red;
+            }
+        }
+    }
+        .read__more-icon {
+            font-size: 60px;
+            color:  #62bdbd;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 50%;
+            margin-left: -30px;
+            top: 46px;
+            margin-bottom: 7px;
+        }
+        .read__more-title {
+            open-sans(extrabold);
+            text-transform: uppercase;
+            color:  #7f8c8c;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 27px;
+        }
+        .read__more-text {
+            open-sans();
+            color: $text;
+            text-align: center;
+            line-height: 20px;
+         }
+        .read__more-button {
+            width: 74.074%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto auto -22px auto;
+
+        }
+            .read__more-button-link {
+                display: block;
+                background-color: lighten(#62bdbd, 20%);
+                box-shadow(0, 7px, 5px, -3px, #62bdbd);
+                padding: 16px 64px;
+                color: #fff;
+                border-radius: 5px;
+                open-sans(semibold);
+                font-size: 14px;
+            }

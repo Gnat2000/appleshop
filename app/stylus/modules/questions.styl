@@ -1,0 +1,184 @@
+.questions .container {
+    clearfix();
+    margin-bottom: 38px;
+}
+    .why__choose, .ratings, .what__say {
+        float: left;
+    }
+    .why__choose {
+        width: 26.49%;
+        padding-left: 2px;
+        padding-right: 18px;
+    }
+    .ratings {
+        width: 50.18%;
+        padding-right: 37px;
+    }
+    .what__say {
+        width: 23.33%;
+        padding-left: 1px;
+    }
+        .why__choose__title {
+            color:  #7f8c8c;
+            font-size: 16px;
+            open-sans(extrabold);
+            margin-top: 0;
+            margin-bottom: 32px;
+
+        }
+            .why__choose-text {
+                color: $text;
+                margin-bottom: 7px;
+
+                &:before {
+                    font-family: FontAwesome , sans-serif;
+                    content: "\f061";
+                    margin-right: 6px;
+                    color: $red;
+                }
+            }
+
+//-----------Ratings-----------
+
+    .ratings__text {
+        color: $text;
+        open-sans();
+        line-height: 23px;
+        padding-left: 12px;
+        margin-bottom: 57px;
+    }
+        .ratings__link {
+            color: $red;
+            text-decoration: underline;
+        }
+    .ratings__arc {
+        clearfix();
+    }
+        .ratings__arc-item {
+            float: left;
+            width: 21.08%;
+            margin-left: 28px;
+            position: relative;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+            .ratings__arc-circular {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border-left: 16px solid transparent;
+                border-top: 16px solid $red;
+                border-bottom: 16px solid transparent;
+                transform: rotate(-45deg);
+
+                &.ratings__arc-circular_0 {
+                    border-right: 16px solid #76c7c0;
+                }
+
+                &.ratings__arc-circular_1 {
+                    border-right: 16px solid #76c7c0;
+                    transform: rotate(-12deg);
+                    border-left: 16px solid $red;
+
+                    &:after {
+                        transform: rotate(12deg);
+                        content: '';
+                        display: block;
+                        width: 122px;
+                        height: 50px;
+                        position: absolute;
+                        left: -23px;
+                        right: 0;
+                        top: 50%;
+                        background-color: #f3f3f3;
+                    }
+                }
+
+                &.ratings__arc-circular_2 {
+                    border-right: 16px solid #76c7c0;
+                    transform: rotate(10deg);
+                    border-left: 16px solid $red;
+
+                    &:after {
+                        transform: rotate(-10deg);
+                        content: '';
+                        display: block;
+                        width: 122px;
+                        height: 50px;
+                        position: absolute;
+                        left: -13px;
+                        right: 0;
+                        top: 50%;
+                        background-color: #f3f3f3;
+                    }
+                }
+                &.ratings__arc-circular_3 {
+                    border-right: 16px solid $red;
+                }
+            }
+            .ratings__arc-number {
+                color:  #7f8c8c;
+                font-size: 30px;
+                open-sans(extrabold);
+                text-align: center;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                margin-top: -36px;
+            }
+            .ratings__arc-title {
+                color:  #7f8c8c;
+                font-size: 16px;
+                open-sans(extrabold);
+                text-align: center;
+                text-transform: uppercase;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                margin-top: 18px;
+            }
+
+
+//-----------Right Block-----------
+
+        .what__say__title {
+            @extend .why__choose__title;
+            margin-bottom: 24px;
+        }
+        .answer {
+            margin-left: 3px;
+            background: #f8f8f8;
+            position: relative;
+
+            & p {
+                open-sans(italic);
+                color: $text;
+                line-height: 24px;
+                padding: 10px 16px 14px;
+
+                & span {
+                    font-style: normal;
+                }
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 25px solid #f8f8f8;
+                border-left: 25px solid transparent;
+                bottom: -25px;
+                left: 19px;
+            }
+        }
+        .name {
+            color: $text;
+            open-sans(semibold);
+            margin-left: 63px;
+            font-size: 16px;
+            padding-top: 6px;
+        }
