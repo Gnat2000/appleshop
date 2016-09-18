@@ -1,4 +1,4 @@
-.why__modus {
+.modus-versus {
     background: $background-color url(../img/Path.png) top center repeat-x;
     padding-top: 59px;
     margin-bottom: 208px;
@@ -7,7 +7,7 @@
         position: relative;
     }
 }
-    .why__modus-title {
+    .modus-versus__title {
         color:  #e1524b;
         open-sans(semibold);
         font-size: 40px;
@@ -16,14 +16,14 @@
         text-transform: uppercase;
         margin-bottom: -4px;
     }
-    .why__modus-text {
+    .modus-versus__text {
         open-sans();
         color: $text;
         text-align: center;
         line-height: 20px;
         margin-bottom: 270px;
     }
-    .center__image {
+    .modus-versus__image_center {
         width: 570px;
         height: 360px;
         background: #BFC5C6;
@@ -39,13 +39,13 @@
         .topbar {
             clearfix();
         }
-            .center__image-left-dots {
+            .topbar__list {
                 margin: 2px 0 13px 8px;
                 padding: 0;
                 min-width: 53px;
                 float: left;
             }
-                .dot {
+                .dot__item {
                     width: 12px;
                     height: 12px;
                     border-radius: 6px;
@@ -57,7 +57,7 @@
                         margin-left: 0;
                     }
                 }
-            .center__image-right-oval {
+            .topbar__oval {
                 float: right;
                 margin-right: 10px;
                 margin-top: 10px;
@@ -68,19 +68,19 @@
                     border-radius: 3px;
                     background: $background-color;
                 }
-        .center__image-top {
+        .image-center {
             border-radius: 6px;
             border: 0 none;
             overflow: hidden;
             max-width: 560px;
             max-height: 315px;
 
-            &.center__image-top-pic {
+            &.image-center_pic {
                 display: block;
                 width: 100%;
             }
         }
-    .right__image {
+    .modus-versus__image_right {
         width: 370px;
         height: 259px;
         background: #BFC5C6;
@@ -88,15 +88,15 @@
         padding: 19px 5px 4px;
         position: absolute;
         bottom: 0;
-        left: calc(50% + 285px - 70px);
+        left: 800px;
         margin: auto auto -113.5px auto;
     }
-    .left__image {
-        @extend .right__image;
-        left: calc(50% - 655px + 70px);
+    .modus-versus__image_left {
+        @extend .modus-versus__image_right;
+        left: 0;
         padding-top: 11px;
     }
-    .left__image-left-dots {
+    .dot__list {
         margin:  0 0 13px 6px;
         padding: 0;
         min-width: 53px;
@@ -105,12 +105,12 @@
         margin-left: 335px;
         margin-bottom: 17px;
     }
-        .image-top {
-            @extend .center__image-top;
+        .image {
+            @extend .image-center;
             max-width: 360px;
             max-height: 214px;
 
-            &.image-top-pic {
+            &.image__pic {
                 display: block;
                 width: 100%;
             }

@@ -1,10 +1,10 @@
 header.header
     .container
-        .header__logo
-            a(href="#").logo
-                img(src='img/logo_footer.png', alt='Логотип').logo__pic
-                .logo-text ModusVersus
-        nav.header__nav
+        .logo
+            a(href="#").logo__link
+                img(src='img/logo_footer.png', alt='Логотип').logo__link-pic
+                .logo-link-text ModusVersus
+        nav.nav
             ul.nav__list
                 each title in ['Home', 'About', 'Services', 'Portfolio', 'Blog', 'Features', 'Contacts', 'Search']
                     li(class="nav__item" + (( title == 'Home')? " active":''))

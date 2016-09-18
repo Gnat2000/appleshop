@@ -2,10 +2,10 @@
     clearfix();
     margin-bottom: 38px;
 }
-    .why__choose, .ratings, .what__say {
+    .why-choose, .ratings, .quote {
         float: left;
     }
-    .why__choose {
+    .why-choose {
         width: 26.49%;
         padding-left: 2px;
         padding-right: 18px;
@@ -14,11 +14,11 @@
         width: 50.18%;
         padding-right: 37px;
     }
-    .what__say {
+    .quote {
         width: 23.33%;
         padding-left: 1px;
     }
-        .why__choose__title {
+        .why-choose__title {
             color:  #7f8c8c;
             font-size: 16px;
             open-sans(extrabold);
@@ -26,7 +26,7 @@
             margin-bottom: 32px;
 
         }
-            .why__choose-text {
+            .why-choose__text {
                 color: $text;
                 margin-bottom: 7px;
 
@@ -145,11 +145,11 @@
 
 //-----------Right Block-----------
 
-        .what__say__title {
-            @extend .why__choose__title;
+        .quote__title {
+            @extend .why-choose__title;
             margin-bottom: 24px;
         }
-        .answer {
+        .quote__text {
             margin-left: 3px;
             background: #f8f8f8;
             position: relative;
@@ -175,7 +175,7 @@
                 left: 19px;
             }
         }
-        .name {
+        .quote__name {
             color: $text;
             open-sans(semibold);
             margin-left: 63px;
